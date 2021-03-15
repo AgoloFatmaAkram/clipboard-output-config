@@ -61,6 +61,14 @@ class LayoutComponent extends Component {
     });
   };
 
+  setValueToArticleUrl = () => {
+    if (this.state.linkTitle) {
+      this.setState({ linkTarget: "articleUrl" });
+    } else {
+      this.setState({ linkTarget: "articleUrl", linkTitle: "articleUrl" });
+    }
+  };
+  
   hideModal = () => {
     this.setState({
       showModal: false,
@@ -107,6 +115,7 @@ class LayoutComponent extends Component {
     return (
       <div
         className={classNames('rdw-link-modal', popupClassName)}
+        style={{ height: "auto" }}
         onClick={stopPropagation}
       >
         <label className="rdw-link-modal-label" htmlFor="linkTitle">
@@ -147,6 +156,13 @@ class LayoutComponent extends Component {
           </span>
         </label>
         <span className="rdw-link-modal-buttonsection">
+        <button
+            className="rdw-link-modal-btn"
+            style={{ marginBottom: "5px" }}
+            onClick={this.setValueToArticleUrl}
+          >
+            Article Url
+          </button>
           <button
             className="rdw-link-modal-btn"
             onClick={this.addLink}
