@@ -23,7 +23,6 @@
   display: flex;
   flex-direction: column;
   width: 235px;
-  height: 205px;
   border: 1px solid #F1F1F1;
   padding: 15px;
   border-radius: 2px;
@@ -57,7 +56,6 @@
 .rdw-link-modal-btn {
   margin-left: 10px;
   width: 75px;
-  height: 30px;
   border: 1px solid #F1F1F1;
   border-radius: 2px;
   cursor: pointer;
