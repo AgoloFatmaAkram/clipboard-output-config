@@ -1,13 +1,13 @@
 {
-  "name": "react-draft-wysiwyg",
-  "version": "1.14.5",
-  "description": "A wysiwyg on top of DraftJS.",
+  "name": "@agolo/clipboard-output-config",
+  "version": "1.0.0",
+  "description": "A Customized wysiwyg on top of DraftJS.",
   "main": "dist/react-draft-wysiwyg.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpuri/react-draft-wysiwyg.git"
+    "url": "https://github.com/AgoloFatmaAkram/clipboard-output-config.git"
   },
-  "author": "Jyoti Puri",
+  "author": "fatma.akram@agolo.com",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
